@@ -1,9 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 header {
     margin-top: 0px;
     background: #46A37C;
     height: 150px;
     width: 100%;
     color:rgb(55, 56, 103);
+}
+
+body {
+    font-family: Roboto, 'Arial', 'Helvetica', sans-serif;
+    line-height: 1.4em;
+    color: rgb(55, 56, 103);
 }
 
 header h2 {
@@ -31,6 +38,13 @@ aside {
     top:182px;
     width: 15%;
     height:3000px;
+}
+
+.img-pc {
+    float: right;
+    width: 317px;
+    height: 395px;
+    margin: 30px;
 }
 
 .line{
