@@ -1,13 +1,14 @@
 # BaSP-week2-2022
 ## Trackgenix 
 
-## General Info
-Landing creation with HTML by Raquel Ferrari
+## Week 1
+Creation through Figma
 
 
-## Installation
-Install the dependencies and devDependencies and start the server.
-Install it locally with npm
+## Week 2
+Programming landing page from Figma with HTML
 
-## License
-Lorem ipsum incidunt iste repellat eligendi numquam sapiente, fugit ducimus
+## Week 3
+Styling landing with CSS (without flexbox)
+
+### By Raquel Ferrari
