@@ -20,10 +20,11 @@ body {
     font-family: "Roboto", "Arial";
     line-height: 1.4em;
     color:rgb(55, 56, 103);
+    background-color: white;
 }
 
-description {
-    position:absolute;
+
+.description {
     display: inline-block;
     margin-top: 20px;
     margin-left: 20%;
@@ -33,6 +34,14 @@ description {
     font-style: bold;
     color:rgb(180, 175, 175);
     position:relative;
+}
+
+.p-description {
+    position:relative;
+    width: 100%;
+    line-height: 1.4em;
+    margin-top: 40px;
+    margin-left: 20%;   
 }
 
 .img-rocket {
@@ -54,6 +63,10 @@ aside {
     line-height:1.4em;
 }
 
+a:link, a:visited, a:active {
+    text-decoration: none;
+}
+
 aside a {
     padding-top: 20px;
     display: inline-block;
@@ -61,11 +74,37 @@ aside a {
     font-weight: bold;
 }
 
+aside a:hover{
+    color: rgb(70, 163, 124);
+    font-weight: 700;
+}
+
 .img-pc {
     float: right;
     width: 317px;
     height: 395px;
     margin: 30px;
+}
+
+.description {
+    display: inline-block;
+}
+
+h1{
+    color: rgb(55, 56, 103);;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 150px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+h5{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: rgb(180, 175, 175);
 }
 
 .line{
@@ -77,12 +116,12 @@ aside a {
 footer {
     margin-left: 10%;
     padding: 20px;
-    background-color: rgb(55, 56, 103);
+    background-color: white;
     text-align: center;
-    font-size: 11px;
+    font-size: 12px;
     line-height: 30px;
     font-style: italic;
-    color: hsla(0,0%,100%,.5);
+    color: black;
     width:100%;
 }
     
