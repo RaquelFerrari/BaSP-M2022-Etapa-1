@@ -146,6 +146,24 @@ h5{
     padding-left: 15%;
 }
 
+.extras {
+    display: inline-block;
+    margin-left: 5%;
+    font-family: 'Roboto', arial, sans-serif; 
+    width: 40%;
+}
+
+.icon img {
+    display:inline-block;
+    border-radius:100%;
+    height: 120px;
+    width: 60%;
+}
+
+.text-extras {
+    display: inline-block;
+    width: 40%;
+}
 
 
 .line{
