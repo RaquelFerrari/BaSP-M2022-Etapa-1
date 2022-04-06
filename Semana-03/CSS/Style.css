@@ -86,7 +86,7 @@ aside a:hover{
     width: 317px;
     height: 395px; 
     margin-right: 15%;
-    margin-top: -5%;
+    margin-top: -7%;
 }
 
 
@@ -118,7 +118,7 @@ h5{
 
 .box{
     display:inline-block;
-    width: 40%;
+    width: 30%;
     background-color: rgb(253, 253, 253);
     box-shadow: 0px 4px 80px rgba(0, 0, 0, 0.05);
     border-radius: 40px;
@@ -247,11 +247,42 @@ input {
     color: rgb(55, 56, 103);
 }
 
-.line{
-    margin-top: 100px;
-    margin-bottom: 50px;
-    border-bottom: 1px solid lightgray;
+.wwa {
+    background: rgb(253, 253, 253);
+    box-shadow: 0px 8px 100px rgba(0, 0, 0, 0.1);
+    border-radius: 50px;
+    width: 50%;
+    height: 250px;
+    margin-left:8%;
+    text-align: left;
 }
+
+.wwa-title {
+    font-family: 'Roboto', arial, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    color: (55, 56, 103);
+    padding-left: 15%;
+    padding-top: 2%;
+    width: 80%;
+}
+
+.wwa-p {
+    font-family: 'Roboto', arial, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;    
+    line-height: 21px;
+    color: rgba(21, 21, 21, 1);
+    text-align:left;
+    padding-left: 15%;
+    padding-top: 2%;
+    margin-bottom:3%;
+    width: 80%;
+}
+
 
 footer {
     margin-left: 10%;
@@ -274,4 +305,6 @@ footer {
 .line{
     border-bottom: 1px solid black;
     padding: 25px 0px 25px 0px;
+    display:inline-block;
+    width:100%;
 }
