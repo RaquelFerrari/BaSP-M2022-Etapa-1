@@ -50,4 +50,9 @@
         font-weight:400px;
         color:rgb(55, 56, 103);
     }
+    .hamburger-container {
+        display:none;
+    }
 }
+
+
