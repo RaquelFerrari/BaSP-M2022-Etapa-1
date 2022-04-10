@@ -23,6 +23,17 @@
         font-weight:400px;
         color:rgb(55, 56, 103);
     }
+    .box-title{
+        font-family:"Roboto", sans-serif;
+        font-size: 24px;
+        font-weight:bold;
+        color:rgb(70, 163, 124);
+    }
+    .box-p{
+        font-family:"Roboto", sans-serif;
+        font-size: 14px;
+        color:rgb(55, 56, 103);
+    }
 }
 
 @media (min-width:820px){
@@ -53,6 +64,16 @@
     .hamburger-container {
         display:none;
     }
+    .box-title{
+        font-family:"Roboto", sans-serif;
+        font-size: 24px;
+        font-weight:bold;
+        color:rgb(70, 163, 124);
+    }
+    .box-p{
+        font-family:"Roboto", sans-serif;
+        font-size: 18px;
+        color:rgb(55, 56, 103);
+
+    }
 }
-
-
