@@ -2,4 +2,27 @@
     aside {
         display:none;
     }
+} 
+
+.description{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center; /* preguntar como descentralizar cuando pasamos a tablet o desktop sin querie */
+}
+
+h5{
+    width:100%;
+    text-align: center;    
+}
+
+.p-description {
+    width:60%; 
+    text-align: center;
+    margin-top: 5%;
+}
+
+.img-pc {
+    width: 250px;
+    height: 300px;
+    padding-top:2%;
 }
