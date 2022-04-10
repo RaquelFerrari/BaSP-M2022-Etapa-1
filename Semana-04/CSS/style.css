@@ -1,0 +1,53 @@
+@media (max-width:820px){
+    h2{
+        font-family:"Roboto", sans-serif;
+        font-size: 30px;
+        font-weight:bold;
+        color:rgb(55, 56, 103);
+    }
+    .hiwe {
+        font-family:"Roboto", sans-serif;
+        font-size: 35px;
+        font-weight:bold;
+        color:rgb(55, 56, 103);
+    }
+    h5{
+        font-family:"Roboto", sans-serif;
+        font-size: 10px;
+        font-weight:bold;
+        color:rgb(180, 175, 175);
+    }
+    .p-description {
+        font-family:"Roboto", sans-serif;
+        font-size: 14px;
+        font-weight:400px;
+        color:rgb(55, 56, 103);
+    }
+}
+
+@media (min-width:820px){
+    h2{
+        font-family:"Roboto", sans-serif;
+        font-size: 40px;
+        font-weight:bold;
+        color:rgb(55, 56, 103);
+    }
+    .hiwe {
+        font-family:"Roboto", sans-serif;
+        font-size: 60px;
+        font-weight:bold;
+        color:rgb(55, 56, 103);
+    }
+    h5{
+        font-family:"Roboto", sans-serif;
+        font-size: 16px;
+        font-weight:bold;
+        color:rgb(180, 175, 175);
+    }
+    .p-description {
+        font-family:"Roboto", sans-serif;
+        font-size: 20px;
+        font-weight:400px;
+        color:rgb(55, 56, 103);
+    }
+}
