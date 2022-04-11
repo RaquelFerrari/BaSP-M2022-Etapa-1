@@ -21,7 +21,7 @@ main{
 h5{
     width:60%;
     text-align: center;
-    padding: 10px;
+    padding: 20px;
 }
 
 .p-description {
@@ -72,19 +72,24 @@ h5{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center ;
 }
 
 .extras{
     display:flex;
-    flex-wrap:flex;
+    flex-wrap:flex; 
     justify-content: center;
     flex-basis:40%;
+    align-items: center;
+    margin: 10px 10px;
+    padding:20px;
 }
 
 .text-extras{
     text-align: center ;
+    align-items: center;
     padding-top:2%;
-    width: 40%;  
-    min-width:300px;
+    width: 100%;  
 }
+
 
