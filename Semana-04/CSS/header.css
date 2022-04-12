@@ -2,7 +2,7 @@ header {
     display: flex;
     align-items: center;
     background:rgb(70, 163, 124);
-    height:100px; /* pasar a % (ver por que no me funciona */
+    height:150px; /* pasar a % (ver por que no me funciona */
     width:100%;
 }
 
