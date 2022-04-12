@@ -82,7 +82,7 @@
     }
     .wwa-title{
         font-family:"Roboto", sans-serif;
-        font-size: 24px;
+        font-size: 30px;
         font-weight:bold;
         color:rgb(55, 56, 103);
         text-align: center;
@@ -93,6 +93,30 @@
         font-weight:400px;
         color:black;
         text-align: center;
+    }
+    h3{
+        font-family:"Roboto", sans-serif;
+        font-size: 24px;
+        font-weight:bold;
+        color:black;
+        text-align: center;  
+    }
+    .lists{
+        font-family:"Roboto", sans-serif;
+        font-size: 14px;
+        font-weight:400px;
+        color:black;
+        text-align: left;
+    }
+    .lists a{
+        text-decoration: none;
+        color:black;
+    }
+    h6{
+        font-family:"Roboto", sans-serif;
+        font-size: 14px;
+        font-style: italic;
+        color:rgb(143, 136, 140);
     }
 }
 @media (min-width:820px){
@@ -193,5 +217,29 @@
         font-weight:400px;
         color:black;
         text-align: center;
+    }
+    h3{
+        font-family:"Roboto", sans-serif;
+        font-size: 30px;
+        font-weight:bold;
+        color:black;
+        text-align: center;  
+    }
+    .lists{
+        font-family:"Roboto", sans-serif;
+        font-size: 18px;
+        font-weight:400px;
+        color:black;
+        text-align: left;
+    }
+    .lists a{
+        text-decoration: none;
+        color:black;
+    }
+    h6{
+        font-family:"Roboto", sans-serif;
+        font-size: 16px;
+        font-style:italic;
+        color:rgb(143, 136, 140);
     }
 }

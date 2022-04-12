@@ -5,7 +5,7 @@
 }
 
 main{
-    padding:0 30px;
+    padding:0 15px;
 }
 
 .description{
@@ -38,8 +38,8 @@ h5{
 }
 
 .line {
-    margin-bottom: 1px solid black;
-    padding: 10px 0px;
+    border-bottom: 1px solid black;
+    padding: 25px 0px 25px 0px;
 }
 
 .box-container {
@@ -192,6 +192,16 @@ textarea{
     text-align:left;
 }
 
+.lists-container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.lists{
+    width:20%;
+    padding-right:12%;
+}
 
 
 
