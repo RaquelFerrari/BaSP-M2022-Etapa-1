@@ -5,6 +5,9 @@
         font-weight:bold;
         color:rgb(55, 56, 103);
     }
+    .description{
+       text-align:center;
+    }   
     .hiwe {
         font-family:"Roboto", sans-serif;
         font-size: 35px;
@@ -126,6 +129,9 @@
         font-weight:bold;
         color:rgb(55, 56, 103);
     }
+    .description{
+        text-align:left;
+    } 
     .hiwe {
         font-family:"Roboto", sans-serif;
         font-size: 60px;
@@ -241,6 +247,5 @@
         font-size: 16px;
         font-style:italic;
         color:rgb(143, 136, 140);
-    }
-   
+    }   
 }
