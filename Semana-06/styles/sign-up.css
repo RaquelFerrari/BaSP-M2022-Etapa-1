@@ -1,0 +1,48 @@
+@media (max-width: 1024px){
+    .sidebar{
+        display: none;
+    }
+}
+@media (min-width: 1024px){
+    .sidebar{
+        width: 20%;
+    }
+}
+.line{
+    border-bottom: 1px solid black;
+    padding: 25px 0px 7% 0px;
+}
+.signup-container{
+    display: flex;
+    justify-content: center;
+}
+.signup-box{
+    background-color: #fff;
+    border-radius: 40px;
+    width: 40%;
+    box-shadow: 5px 5px 10px;
+    padding: 65px;
+}
+.signup-box h3{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 15px;
+}
+form div{
+    display: flex;
+    padding-bottom:10px;  
+}
+form label{
+    display: flex;
+    padding-right:10px;
+}
+.form-group-button {
+    display: flex;
+    justify-content: right;
+    padding-top: 20px;
+}
+span{
+    display: none;
+    margin-bottom: 15px;
+    color: red;
+}   

@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="../styles/header.css">
     <link rel="stylesheet" href="../styles/aside.css">
     <link rel="stylesheet" href="../styles/footer.css">
+    <link rel="stylesheet" href="../styles/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 </head>
 <body>
@@ -17,9 +18,9 @@
         <aside class="menu">
             <img class="img-rocket" src="../Assets/cohete.png">
             <ul>
-                <li><a href="../Views/index.html">Home</a></li>
-                <li><a href="../Views/sign-up.html">Sign Up</a></li>
-                <li><a href="../Views/login.html">Log in</a></li>
+                <li><a href="../views/index.html">Home</a></li>
+                <li><a href="../views/sign-up.html">SignUp</a></li>
+                <li><a href="../views/login.html">LogIn</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
         </aside>
@@ -34,14 +35,16 @@
             <h2>Trackgenix SA</h2>
         </header>
         <main>
-            <section>
+            <section class="line">
+            <section class="signup-container">
+            <div class="signup-box">
                 <h3>Sign Up</h3>
                 <form>
-                    <div>
+                    <div class="f-name">
                         <label>First Name</label>
                         <input type="text" name="name" placeholder="Raquel">
                     </div>
-                    <div>
+                    <div class="l-name">
                         <label>Last Name</label>
                         <input type="text" name="last-name" placeholder="Ferrari">
                     </div>
@@ -81,11 +84,13 @@
                         <label>Repeat Password</label>
                         <input type="password" id="pwd" name="pwd" placeholder="password">
                     </div>
-                    <div>
+                    <div class=" form-group-button">
                         <input class="submit" type="submit" name="submit" value="Submit">
                         <input class="reset" type="reset" name="reset" value="Reset">
                     </div>
                 </form>
+            </div>
+            </section>
             </section>
         </main>
         <footer>
