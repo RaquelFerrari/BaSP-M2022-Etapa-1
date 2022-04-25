@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet"  href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../styles/aside.css">
+    <link rel="stylesheet" href="../styles/login.css">
+    <link rel="stylesheet" href="../styles/footer.css">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+</head>
+<body>
+    <div class="sidebar">
+        <aside class="menu">
+            <img class="img-rocket" src="../Assets/cohete.png">
+            <ul>
+                <li><a href="../Views/index.html">Home</a></li>
+                <li><a href="../Views/sign-up.html">Sign Up</a></li>
+                <li><a href="../Views/login.html">Log in</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </aside>
+    </div>
+        <header>
+            <div class="hamburger-container">
+                <div class="hamburger">
+                    <img src="../Assets/hamburger.png">
+                </div>
+            </div>
+            <h2>Trackgenix SA</h2>
+        </header>
+    <main>
+        <section class="line">
+        <section class="login-container">
+            <div class="login-box">
+            <h3>Login</h3>
+            <form id="form">
+                <div class="email-form">
+                    <div class="icon">
+                        <img src="../Assets/mail-box.JPG">
+                    </div>
+                    <label>Email</label>
+                    <input  id="email" type="text" name="Email" placeholder="example@mycompany.com">
+                </div>
+                    <span id="error-email"> Email is incorrect</span>
+                    <span id="email-required"> Email is required</span>
+                <div class="password-form">
+                    <div class="icon">
+                        <img src="../Assets/padlock.JPG">
+                    </div>
+                    <label>Password</label>
+                    <input id="password" type="password" id="pwd" name="pwd" placeholder="Password"> 
+                </div>
+                    <span id="error-password"> Password incorrect</span>
+                    <span id="password-required"> Password is required</span>
+                <div class="checkbox">
+                    <label>Remember Me</label>
+                    <input id="checkbox" type="checkbox" name="checkbox" value="Checkbox"> 
+                </div>
+                <div class="input-login">
+                    <input id="input-login" type="submit" name="login" value="Login">
+                </div>
+            </form>
+            </div>
+        </section>
+        </section>
+    </main>
+    <footer>
+        <a href="linkedin.com/trackgenix">
+            <img class="rrss" src="../Assets/ln.JPG">
+        </a>
+        <a href="facebook.com/trackgenix">
+            <img class="rrss" src="../Assets/fbc.JPG" >
+        </a>
+        <a href="twitter.com/trackgenix">
+            <img class="rrss" src="../Assets/twt.jpg">
+        </a>
+        <a href="github.com/trackgenix">
+            <img class="rrss" src="../Assets/nn.JPG">
+        </a>
+        <a href="instagram.com/trackgenix">
+            <img class="rrss" src="../Assets/insta.JPG">
+        </a>
+        <h6 class="copy">Copyright &copy; 2022 Trackgenix SA. All rights reserved.</h6>
+    </footer>
+    
+    <script src="../javascript/login.js"></script> 
+</body>
+</html>

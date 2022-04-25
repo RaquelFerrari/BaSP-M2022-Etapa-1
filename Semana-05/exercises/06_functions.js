@@ -42,7 +42,7 @@ function validate(a,b){
                 }
             }
         }
-    }           
+    }
 }
 console.log("ex06-functions-D", validate(a,b))
 

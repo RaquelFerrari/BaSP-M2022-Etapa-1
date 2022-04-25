@@ -1,0 +1,251 @@
+@media (max-width:840px){
+    h2{
+        font-family:"Roboto", sans-serif;
+        font-size: 30px;
+        font-weight:bold;
+        color:rgb(55, 56, 103);
+    }
+    .description{
+       text-align:center;
+    }   
+    .hiwe {
+        font-family:"Roboto", sans-serif;
+        font-size: 35px;
+        font-weight:bold;
+        color:rgb(55, 56, 103);
+    }
+    h5{
+        font-family:"Roboto", sans-serif;
+        font-size: 10px;
+        font-weight:bold;
+        color:rgb(180, 175, 175);
+    }
+    .p-description {
+        font-family:"Roboto", sans-serif;
+        font-size: 14px;
+        font-weight:400px;
+        color:rgb(55, 56, 103);
+    }
+    .box-title{
+        font-family:"Roboto", sans-serif;
+        font-size: 24px;
+        font-weight:bold;
+        color:rgb(70, 163, 124);
+    }
+    .box-p{
+        font-family:"Roboto", sans-serif;
+        font-size: 14px;
+        color:rgb(55, 56, 103);
+    }
+    h4{
+        font-family:"Roboto", sans-serif;
+        font-size: 20px;
+        font-weight:bold;
+        color:rgb(55, 56, 103);
+    }
+    .text-extras{
+        font-family:"Roboto", sans-serif;
+        font-size: 18px;
+        color: black;
+    }
+    .contact-title{
+        font-family:"Roboto", sans-serif;
+        font-size: 20px;
+        font-weight:bold;
+        color:rgb(55, 56, 103);
+    }
+    form{
+        font-family:"Roboto", sans-serif;
+        font-size: 16px;
+        font-weight:bold;
+        color:rgb(55, 56, 103);
+    }
+    select{
+        font-family:"Roboto", sans-serif;
+        font-size: 14px;
+        font-weight:400px;
+        color:rgb(55, 56, 103);
+    }
+    input.submit{
+        font-family:"Roboto", sans-serif;
+        font-size: 12px;
+        font-weight:bold;
+        color:rgb(55, 56, 103);
+        border-radius: 7px;
+        background-color:rgb(170, 206, 155);
+        text-align: center;
+    }
+    input.reset{
+        font-family:"Roboto", sans-serif;
+        font-size: 12px;
+        font-weight:bold;
+        color:rgb(55, 56, 103);
+        border-radius: 7px;
+        text-align: center;
+    }
+    .wwa-title{
+        font-family:"Roboto", sans-serif;
+        font-size: 30px;
+        font-weight:bold;
+        color:rgb(55, 56, 103);
+        text-align: center;
+    }
+    .wwa-p{
+        font-family:"Roboto", sans-serif;
+        font-size: 18px;
+        font-weight:400px;
+        color:black;
+        text-align: center;
+    }
+    h3{
+        font-family:"Roboto", sans-serif;
+        font-size: 24px;
+        font-weight:bold;
+        color:black;
+        text-align: center;  
+    }
+    .lists{
+        font-family:"Roboto", sans-serif;
+        font-size: 14px;
+        font-weight:400px;
+        color:black;
+        text-align: left;
+    }
+    .lists a{
+        text-decoration: none;
+        color:black;
+    }
+    h6{
+        font-family:"Roboto", sans-serif;
+        font-size: 14px;
+        font-style: italic;
+        color:rgb(143, 136, 140);
+    }
+}
+@media (min-width:840px){
+    h2{
+        font-family:"Roboto", sans-serif;
+        font-size: 40px;
+        font-weight:bold;
+        color:rgb(55, 56, 103);
+    }
+    .description{
+        text-align:left;
+    } 
+    .hiwe {
+        font-family:"Roboto", sans-serif;
+        font-size: 60px;
+        font-weight:bold;
+        color:rgb(55, 56, 103);
+    }
+    h5{
+        font-family:"Roboto", sans-serif;
+        font-size: 16px;
+        font-weight:bold;
+        color:rgb(180, 175, 175);
+    }
+    .p-description {
+        font-family:"Roboto", sans-serif;
+        font-size: 20px;
+        font-weight:400px;
+        color:rgb(55, 56, 103)
+    }
+    .hamburger-container {
+        display:none;
+    }
+    .box-title{
+        font-family:"Roboto", sans-serif;
+        font-size: 24px;
+        font-weight:bold;
+        color:rgb(70, 163, 124);
+    }
+    .box-p{
+        font-family:"Roboto", sans-serif;
+        font-size: 18px;
+        color:rgb(55, 56, 103);
+    }
+    h4{
+        font-family:"Roboto", sans-serif;
+        font-size: 24px;
+        font-weight:bold;
+        color:rgb(55, 56, 103);
+    }
+    .text-extras{
+        font-family:"Roboto", sans-serif;
+        font-size: 18px;
+        color: black;
+    }
+    .contact-title{
+        font-family:"Roboto", sans-serif;
+        font-size: 24px;
+        font-weight:bold;
+        color: rgb(55, 56, 103);
+    }
+    form{
+        font-family:"Roboto", sans-serif;
+        font-size: 18px;
+        font-weight:bold;
+        color:rgb(55, 56, 103);
+    }
+    select{
+        font-family:"Roboto", sans-serif;
+        font-size: 16px;
+        font-weight:400px;
+        color:rgb(55, 56, 103);
+    }
+    input.submit{
+        font-family:"Roboto", sans-serif;
+        font-size: 14px;
+        font-weight:bold;
+        color:rgb(55, 56, 103);
+        border-radius: 7px;
+        background-color:rgb(170, 206, 155);
+        text-align: center;
+    }
+    input.reset{
+        font-family:"Roboto", sans-serif;
+        font-size: 14px;
+        font-weight:bold;
+        color:rgb(55, 56, 103);
+        border-radius: 7px;
+        text-align: center;
+    }
+    .wwa-title{
+        font-family:"Roboto", sans-serif;
+        font-size: 24px;
+        font-weight:bold;
+        color:rgb(55, 56, 103);
+        text-align: center;
+    }
+    .wwa-p{
+        font-family:"Roboto", sans-serif;
+        font-size: 18px;
+        font-weight:400px;
+        color:black;
+        text-align: center;
+    }
+    h3{
+        font-family:"Roboto", sans-serif;
+        font-size: 30px;
+        font-weight:bold;
+        color:black;
+        text-align: center;  
+    }
+    .lists{
+        font-family:"Roboto", sans-serif;
+        font-size: 18px;
+        font-weight:400px;
+        color:black;
+        text-align: left;
+    }
+    .lists a{
+        text-decoration: none;
+        color:black;
+    }
+    h6{
+        font-family:"Roboto", sans-serif;
+        font-size: 16px;
+        font-style:italic;
+        color:rgb(143, 136, 140);
+    }   
+}

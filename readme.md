@@ -16,4 +16,9 @@ Styling landing with CSS FLEXBOX
 
 https://raquelferrari.github.io/BaSP-M2022-Etapa-1/Semana-04/
 
+## Week 5
+Fixed CSS 
+JavaSript excercises 
+https://raquelferrari.github.io/BaSP-M2022-Etapa-1/Semana-05/
+
 ### By Raquel Ferrari
