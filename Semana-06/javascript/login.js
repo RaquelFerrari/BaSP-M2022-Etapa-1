@@ -18,7 +18,7 @@ form.addEventListener("submit", (e) => {
     else if (!validateEmail() || !validatePassword()){
         loginComplete.classList.add("loginComplete");
         loginComplete.innerHTML = "Email incorrect or password incorrect"+"<p></p>" + "Email: "+email.value+"<p></p>"+
-        + "Password: "+password.value+"</p>";
+        + "Password: "+ password.value+"</p>";
 
     }
 })
