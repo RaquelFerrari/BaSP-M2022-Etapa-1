@@ -21,4 +21,8 @@ Fixed CSS
 JavaSript excercises 
 https://raquelferrari.github.io/BaSP-M2022-Etapa-1/Semana-05/
 
+## Week 6
+Login & Signup in html, css and js
+https://raquelferrari.github.io/BaSP-M2022-Etapa-1/Semana-06/
+
 ### By Raquel Ferrari

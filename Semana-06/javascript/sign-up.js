@@ -83,26 +83,26 @@ function validateFName(e){
     "X", "Y", "Z", " "];
     var FNCh = 0;
     var FNSm = 0;
-    for(i=0;i<firstName.value.length;i++){
-        if(!Letters.includes(firstName.value[i])){
+    for(i=0;i<fName.value.length;i++){
+        if(!Letters.includes(fName.value[i])){
             FNSm++
         }
-        if(Letters.includes(firstName.value[i])){
+        if(Letters.includes(fName.value[i])){
             FNCh++
         }
     }
     if (firstName.value ===""){
         fNameRequired.style.display = "block";
-        firstName.style.border = "solid 2px red";
+        fName.style.border = "solid 2px red";
         return false;
     }
-    else if(firstName.value.length<3 || FNCh<1 || FNSm>0){
+    else if(fName.value.length<3 || FNCh<1 || FNSm>0){
         fNameInvalid.style.display ="block";
-        firstName.style.border = "solid 2px red";
+        fName.style.border = "solid 2px red";
         return false;
     }
     else{
-        firstName.style.border = "solid 2px green"
+        fName.style.border = "solid 2px green"
         return true;
     }   
 }
@@ -361,12 +361,6 @@ function validatePostalCode(e){
         return true;
     }
 }
-postalCode.addEventListener("focus", writtingPostalCode)
-function writtingPostCode(e){
-    pcRequired.style.display = "none";
-    pcIncorrect.style.display = "none";
-    postalCode.style.border = "solid 2px black";
-}
 
 email.addEventListener( "blur", validateEmail)
 function validateEmail(e){
@@ -430,34 +424,4 @@ function validatePassword(e){
         password.style.border = "solid 2px green";
         return true;
     }
-}
-password.addEventListener ("focus", writtingPassword)
-function writtingPassword(e){
-    requiredPassword.style.display = "none";
-    passwordError.style.display = "none";
-    password.style.border = "solid 2px black";
-}
-
-repPassword.addEventListener("blur",repeatPassword)
-function repeatPassword(e){
-    if(repPassword.value === ""){
-        passwordRequired2.style.display = "block";
-        repPassword.style.border = "solid 2px red";
-        return false;
-    }
-    else if (repPassword.value !== password.value){
-        unMatchedPwd.style.display = "block";
-        repPassword.style.border = "solid 2px red";
-        return false;
-    }
-    else{
-        repPassword.style.border = "solid 2px green";
-        return true;
-    }
-}
-repPassword.addEventListener("focus", repeatingPassword)
-function repeatingPassword(e){
-    passwordRequired2.style.display = "none";
-    unMatchedPwd.style.display = "none";
-    repPassword.style.border = "solid 2px black"
 }
