@@ -35,6 +35,7 @@ form div{
 form label{
     display: flex;
     padding-right:10px;
+    width:20%;
 }
 .form-group-button {
     display: flex;
