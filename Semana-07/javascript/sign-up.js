@@ -30,7 +30,7 @@ var requiredEmail = document.getElementById("email-required");
 var emailError = document.getElementById("error-email");
 var requiredPassword = document.getElementById("password-required");
 var passwordError = document.getElementById("error-password");
-var password2Required = document.getElementById("password-required2");
+var passwordTwoRequired = document.getElementById("password-required2");
 var unMatchedPwd = document.getElementById("unmatched-password")
 var signUp = document.getElementById("input-signup");
 var reset = document.getElementById("input-reset");
@@ -257,6 +257,52 @@ function writingPhone(e){
     phone.style.border = "solid 2px black"
 }
 
+address.addEventListener("blur", validateAddress)
+function validateAddress(e){
+    var Letters = ["a","b", "c", "d", "e", "f", "g", "h", "i", "j",
+    "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w",
+    "x", "y", "z", "A", "B", "C", "D", "E", "F", "G", "H", "I", "J",
+    "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W",
+    "X", "Y", "Z", " "];
+    var Numbers = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9",];
+    var AdCh = 0;
+    var AdNum = 0;
+    var AdSm = 0;
+    for(i=0;i<address.value.length;i++){
+        if(!Letters.includes(address.value[i]) && !Numbers.includes(address.value[i])){
+            AdSm++
+        }
+        if(Letters.includes(address.value[i])){
+            AdCh++
+        }
+        if(Numbers.includes(address.value[i])){
+            AdNum++
+        }
+    }
+    if(address.value ===""){
+        addressRequired.style.display = "flex";
+        addressRequired.style.justifyContent = "center";
+        address.style.border = "solid 2px red";
+        return false;
+    }
+    else if(address.value.length<5 || AdCh<1 || AdNum<1 || AdSm>1){
+        addressIncorrect.style.display = "flex";
+        addressIncorrect.style.justifyContent = "center";
+        address.style.border = "solid 2px red";
+        return false;
+    }
+    else{
+        address.style.border = "solid 2px green"
+        return true;
+    }   
+}
+address.addEventListener("focus", writtingAddress)
+function writtingAddress(e){
+    addressRequired.style.display = "none";
+    addressIncorrect.style.display = "none";
+    address.style.border = "solid 2px black";
+}
+
 city.addEventListener("blur", validateCity)
 function validateCity(e){
     var LetNum = ["a","b", "c", "d", "e", "f", "g", "h", "i", "j",
@@ -288,6 +334,44 @@ function validateCity(e){
         city.style.border = "solid 2px green";
         return true;
     }
+}
+
+postalCode.addEventListener("blur", validatePostalCode)
+function validatePostalCode(e){
+    var Numbers = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
+    var ZipNum = 0;
+    var ZipSm = 0;
+    for (i=0;i<postalCode.value.lenght;i++){
+        if(!Numbers.includes(postalCode.value[i])){
+            ZipSm++
+        }
+        if(Numbers.includes(postalCode.value[i])){
+            ZipNum++
+        }
+    }
+    if(postalCode.value === ""){
+        pcRequired.style.display="flex";
+        pcRequired.style.justifyContent = "center";
+        postalCode.style.border = "solid 2px red";
+        return false;
+    }
+    else if(postalCode.value.lenght<4 || ZipNum<1 || ZipSm>0){
+        pcIncorrect.style.display = "flex";
+        pcIncorrect.style.justifyContent ="center";
+        postalCode.style.border = "solid 2px red";
+        return false;
+    }
+    else{
+        postalCode.style.border = "solid 2px green"
+        return true;
+    }
+}
+postalCode.addEventListener("focus", writtingPostalCode)
+
+function writtingPostalCode(e){
+    pcRequired.style.display = "none";
+    pcIncorrect.style.display = "none";
+    postalCode.style.border = "solid 2px black";
 }
 
 email.addEventListener( "blur", validateEmail)
@@ -333,12 +417,52 @@ function validatePassword(e){
         }
     }
     if (password.value === ""){
+        requiredPassword.style.display="flex";
+        requiredPassword.style.justifyContent = "center";
+        password.style.border = "solid 2px red";
         return false
     }
     else if(password.value.length<8 || PwdLet<1 || PwdNum<1 || PwdSm>0){
+        passwordError.style.display = "flex";
+        passwordError.style.justifyContent ="center";
+        password.style.border = "solid 2px red";
         return false;
     }
-    else{;
+    else{
+        password.style.border = "solid 2px green";
         return true;
     }
+
+password.addEventListener("focus", writtingPassword)
+function writtingPassword(e){
+    requiredPassword.style.display = "none";
+    passwordError.style.display = "none";
+    password.style.border = "solid 2px black";
+}
+}
+
+repPassword.addEventListener("blur", repeatPassword)
+function repeatPassword(e){
+    if(repPassword.value === ""){
+        passwordTwoRequired.style.display = "flex";
+        passwordTwoRequired.style.justifyContent = "center";
+        repPassword.style.border = "solid 2px red";
+        return false;
+    }
+    else if (repPassword.value !== password.value){
+        unMatchedPwd.style.display = "flex";
+        unMatchedPwd.style.justifyContent = "center";
+        repPassword.style.border = "solid 2px red";
+        return false;
+    }
+    else{
+        repPassword.style.border = "solid 2px green";
+        return true;
+    }
+}
+repPassword.addEventListener("focus", repeatingPassword)
+function repeatingPassword(e){
+    passwordTwoRequired.style.display = "none";
+    unMatchedPwd.style.display = "none";
+    repPassword.style.border = "solid 2px black"
 }
