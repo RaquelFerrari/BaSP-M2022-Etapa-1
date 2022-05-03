@@ -7,6 +7,7 @@ var passwordError = document.getElementById("error-password");
 var requiredPassword = document.getElementById("password-required");
 var login = document.getElementById("input-login");
 var loginComplete = document.getElementById("login-complete");
+var success = document.getElementById("success");
 
 document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("form").addEventListener("submit", validarFormulario);
@@ -34,6 +35,19 @@ form.addEventListener("submit", (e) => {
         loginComplete.classList.add("loginComplete");
         loginComplete.innerHTML = "Login Complete"+ "<p></p>" + "Email: "+email.value+"<p></p>"+
         "Password: "+password.value+"</p>";
+        var url = `https://basp-m2022-api-rest-server.herokuapp.com/login?email=${email.value}&password=${password.value}`
+        fetch(url)
+        .then(response => response.json())
+        .then(data =>{
+            document.getElementById("modal").style.display = "block";
+            document.getElementById("close").onclick = function () {
+            document.getElementById("modal").style.display = 'none';
+            }
+            success.classList.add("success")
+            success.innerHTML = "<p>" + data.msg + "</p>"})
+        .catch(error =>{
+            console.log(error)
+        })
     }
     else if (!validateEmail() || !validatePassword()){
         loginComplete.classList.add("loginComplete");
