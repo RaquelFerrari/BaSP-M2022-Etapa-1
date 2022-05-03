@@ -36,6 +36,44 @@ var signUp = document.getElementById("input-signup");
 var reset = document.getElementById("input-reset");
 var signUpComplete = document.getElementById("sign-up Complete");
 
+function saveData(){
+    localStorage.setItem("First Name:", fName.value);
+    localStorage.setItem("Last Name:", lName.value);
+    localStorage.setItem("DNI:", dni.value);
+    localStorage.setItem("Birth Date:", bday.value);
+    localStorage.setItem("Phone:", phone.value);
+    localStorage.setItem("Address:",address.value);
+    localStorage.setItem("City:",city.value);
+    localStorage.setItem("Postal Code:",postalCode.value);
+    localStorage.setItem("Email:",email.value);
+    localStorage.setItem("Password:",password.value);
+}
+
+function storage(){
+    if (
+        localStorage.getItem("First Name:") != null &&
+        localStorage.getItem("Last Name:") != null &&
+        localStorage.getItem("DNI:") != null &&
+        localStorage.getItem("Birth Date:") != null &&
+        localStorage.getItem("Phone:") != null &&
+        localStorage.getItem("Address:") != null &&
+        localStorage.getItem("City:") != null &&
+        localStorage.getItem("Postal Code:") != null &&
+        localStorage.getItem("Email:") != null &&
+        localStorage.getItem("Password") != null){
+            fName.value = localStorage.getItem("First Name:");
+            lName.value = localStorage.getItem("Last Name:");
+            dni.value = localStorage.getItem("DNI:");
+            bday.value = localStorage.getItem("Birth Date:");
+            phone.value = localStorage.getItem("Phone:");
+            address.value = localStorage.getItem ("Adress:");
+            city.value = localStorage.getItem ("City:");
+            postalCode.value = localStorage.getItem("Post Code:");
+            email.value = localStorage.getItem("Email:");
+            password.value = localStorage.getItem("Password:");
+        }
+}
+
 form.addEventListener("submit", (e) =>{
     e.preventDefault();
     if(validateFName() && validateLName() && validateDni() && validateDate && validatePhone &&
