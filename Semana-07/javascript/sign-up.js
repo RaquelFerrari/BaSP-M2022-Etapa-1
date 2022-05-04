@@ -49,30 +49,19 @@ function saveData(){
     localStorage.setItem("Password:",password.value);
 }
 
+window.onload=storage
 function storage(){
-    if (
-        localStorage.getItem("First Name:") != null &&
-        localStorage.getItem("Last Name:") != null &&
-        localStorage.getItem("DNI:") != null &&
-        localStorage.getItem("Birth Date:") != null &&
-        localStorage.getItem("Phone:") != null &&
-        localStorage.getItem("Address:") != null &&
-        localStorage.getItem("City:") != null &&
-        localStorage.getItem("Postal Code:") != null &&
-        localStorage.getItem("Email:") != null &&
-        localStorage.getItem("Password") != null){
-            fName.value = localStorage.getItem("First Name:");
-            lName.value = localStorage.getItem("Last Name:");
-            dni.value = localStorage.getItem("DNI:");
-            bday.value = localStorage.getItem("Birth Date:");
-            phone.value = localStorage.getItem("Phone:");
-            address.value = localStorage.getItem ("Adress:");
-            city.value = localStorage.getItem ("City:");
-            postalCode.value = localStorage.getItem("Post Code:");
-            email.value = localStorage.getItem("Email:");
-            password.value = localStorage.getItem("Password:");
-        }
-}
+    fName.value = localStorage.getItem("First Name:");
+    lName.value = localStorage.getItem("Last Name:");
+    dni.value = localStorage.getItem("DNI:");
+    bday.value = localStorage.getItem("Birth Date:");
+    phone.value = localStorage.getItem("Phone:");
+    address.value = localStorage.getItem ("Adress:");
+    city.value = localStorage.getItem ("City:");
+    postalCode.value = localStorage.getItem("Post Code:");
+    email.value = localStorage.getItem("Email:");
+    password.value = localStorage.getItem("Password:")
+}        
 
 form.addEventListener("submit", (e) =>{
     e.preventDefault();
