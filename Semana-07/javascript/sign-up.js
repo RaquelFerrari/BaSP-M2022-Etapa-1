@@ -65,6 +65,9 @@ function storage(){
 
 form.addEventListener("submit", (e) =>{
     e.preventDefault();
+    var correctFormat = "";
+    var formatDate = bday.value.split('-');
+    correctFormat= formatDate.slice(1, 2)+ '/'+ formatDate.slice(2)+ '/'+ formatDate.slice(0,1)
     if(validateFName() && validateLName() && validateDni() && validateDate && validatePhone &&
     validateAddress() && validateCity() && validatePostalCode() && validateEmail && validatePassword &&
     repeatPassword()){
@@ -81,6 +84,15 @@ form.addEventListener("submit", (e) =>{
        +"Email: "+email.value+"<p></p>"
        +"Password: "+password.value+"<p></p>"
        +"Repeat Password: "+repPassword.value+"</p>"
+       var url = `https://basp-m2022-api-rest-server.herokuapp.com/signup?name=${fName.value}&lastName=${lName.value}&dni=${dNI.value}&dob=${correctFormat}&phone=${phone.value}&address=${adress.value}&city=${city.value}&zip=${postCode.value}&email=${email.value}&password=${password.value}`
+       fetch(url)
+       .then(response => response.json())
+       .then(data => {
+            saveData()
+            storage()}) 
+   .catch(error =>{
+       console.log(error)
+   })
     }
     else if(!validateFName() || !validateLName() || !validateDni() || !validateDate || !validatePhone ||
     !validateAddress() || !validateCity() || !validatePostalCode() || !validateEmail || !validatePassword ||
