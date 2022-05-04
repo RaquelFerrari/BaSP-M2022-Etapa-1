@@ -7,53 +7,24 @@ var passwordError = document.getElementById("error-password");
 var requiredPassword = document.getElementById("password-required");
 var login = document.getElementById("input-login");
 var loginComplete = document.getElementById("login-complete");
-var success = document.getElementById("success");
-
-document.addEventListener("DOMContentLoaded", function () {
-    document.getElementById("form").addEventListener("submit", validarFormulario);
-    });
-    
-    function validarFormulario(evento){
-        evento.preventDefault();
-        var usuario = document.getElementById("email").value;
-        if(usuario.lenght == 0) {
-            alert("Falta completar usuario");
-            return;
-        }
-        var clave = document.getElementById("password").value;
-        if(clave.lenght <6){
-            alert ("La clave no es válida");
-            return;
-        }
-        this.submit();
-    }
-
 
 form.addEventListener("submit", (e) => {
     e.preventDefault();
-    if(validateEmail(email) && validatePassword(password)){
+    if(validateEmail() && validatePassword()){
         loginComplete.classList.add("loginComplete");
         loginComplete.innerHTML = "Login Complete"+ "<p></p>" + "Email: "+email.value+"<p></p>"+
-        "Password: "+password.value+"</p>";
+        "Password: "+ password.value;
         var url = `https://basp-m2022-api-rest-server.herokuapp.com/login?email=${email.value}&password=${password.value}`
         fetch(url)
         .then(response => response.json())
-        .then(data =>{
-            document.getElementById("modal").style.display = "block";
-            document.getElementById("close").onclick = function () {
-            document.getElementById("modal").style.display = 'none';
-            }
-            success.classList.add("success")
-            success.innerHTML = "<p>" + data.msg + "</p>"})
         .catch(error =>{
             console.log(error)
         })
     }
     else if (!validateEmail() || !validatePassword()){
         loginComplete.classList.add("loginComplete");
-        loginComplete.innerHTML = "Email incorrect or password incorrect"+"<p></p>" + "Email: "+email.value+"<p></p>"+
+        loginComplete.innerHTML = "Email or password incorrect"+"<p></p>" + "Email: "+email.value+"<p></p>"+
         + "Password: "+ password.value+"</p>";
-
     }
 })
 
