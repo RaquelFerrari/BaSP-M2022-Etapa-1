@@ -56,9 +56,9 @@ function storage(){
     dni.value = localStorage.getItem("DNI:");
     bday.value = localStorage.getItem("Birth Date:");
     phone.value = localStorage.getItem("Phone:");
-    address.value = localStorage.getItem ("Adress:");
+    address.value = localStorage.getItem ("Address:");
     city.value = localStorage.getItem ("City:");
-    postalCode.value = localStorage.getItem("Post Code:");
+    postalCode.value = localStorage.getItem("Postal Code:");
     email.value = localStorage.getItem("Email:");
     password.value = localStorage.getItem("Password:")
 }        
@@ -84,7 +84,7 @@ form.addEventListener("submit", (e) =>{
        +"Email: "+email.value+"<p></p>"
        +"Password: "+password.value+"<p></p>"
        +"Repeat Password: "+repPassword.value+"</p>"
-       var url = `https://basp-m2022-api-rest-server.herokuapp.com/signup?name=${fName.value}&lastName=${lName.value}&dni=${dNI.value}&dob=${correctFormat}&phone=${phone.value}&address=${adress.value}&city=${city.value}&zip=${postCode.value}&email=${email.value}&password=${password.value}`
+       var url = `https://basp-m2022-api-rest-server.herokuapp.com/signup?fName=${fName.value}&lName=${lName.value}&dni=${dni.value}&bday=${correctFormat}&phone=${phone.value}&address=${address.value}&city=${city.value}&zip=${postalCode.value}&email=${email.value}&password=${password.value}`
        fetch(url)
        .then(response => response.json())
        .then(data => {
